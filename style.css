@@ -1,0 +1,181 @@
+body {
+  min-height: 50vh;
+  font-family: helvetica, Arial, sans-serif;
+  font-size: 2vmin;
+  background-color: #555;
+  color: white;
+  margin: 3vmin 4vmin 2vmin 4vmin;
+}
+
+/* iPad portait */
+@media (max-width: 768px) {
+  body {
+    font-size: 3vmin;
+  }
+}
+
+/* iPhone landscape only */
+@media (max-width: 568px) {
+  body {
+    font-size: 4vmin;
+  }
+}
+
+/* iPhone portait only */
+@media (max-width: 320px) {
+  body {
+    font-size: 4vmin;
+  }
+}
+
+*:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 1.5em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  column-gap: 0.7em;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#github {
+  margin-left: auto;
+}
+
+#github-cat {
+  height: 1.5em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+div#center {
+  min-width: 50vw;
+  padding: 0;
+}
+
+div {
+  padding-top: 2vmin;
+  padding-bottom: 2vmin;
+}
+
+div#details-div {
+  padding-top: 0;
+}
+
+form {
+  margin-top: 2vmin;
+}
+
+input {
+  font-size: inherit;
+}
+
+input#title-input {
+  margin-left: 1vmin;
+}
+
+textarea {
+  font-size: inherit;
+  font-family: inherit;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 20vh;
+  margin-top: 2vmin;
+  /* otherwise textarea is wider then 100 % */
+  box-sizing: border-box;
+}
+
+div#bookmark-div {
+  display: contents;
+}
+
+#bookmarklet-a {
+  font-size: 1em;
+  padding: 5px 10px;
+  margin-left: 1vmin;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border-color: white;
+}
+
+#bookmarklet-a::before {
+  content: "\2261";
+  padding-right: 1ch;
+}
+
+div#actions {
+  display: flex;
+  align-items: center;
+}
+
+div#buttons {
+  margin-left: auto;
+}
+
+button {
+  font-size: 1em;
+  padding: 5px 10px;
+  margin-left: 1vmin;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border-color: white;
+  background-color: #333;
+}
+
+hr {
+  margin-top: 2vmin;
+  border: 0px #ccc solid;
+  border-top-width: 1px;
+}
+
+div#info {
+  padding-top: 1.5vmin;
+}
+
+#output-details {
+  color: #ccc;
+}
+
+#output-div {
+  padding-bottom: 0;
+}
+
+#output-textarea {
+  color: #ccc;
+  background-color: #555;
+  border-color: #ccc;
+}
+
+@media (max-width: 568px) {
+  div#actions {
+    display: inline-grid;
+  }
+  #bookmarklet-a {
+    margin-bottom: 3vmin;
+  }
+}
