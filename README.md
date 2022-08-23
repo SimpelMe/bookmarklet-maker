@@ -5,3 +5,5 @@ Bookmarklets are browser bookmarks that execute JavaScript instead of opening a 
 1. Drag and drop your bookmarklet to your browsers bookmark toolbar.
 
 ![screenshot](screenshot.png)
+
+Inspired by [https://github.com/caiorss/bookmarklet-maker](https://github.com/caiorss/bookmarklet-maker).
